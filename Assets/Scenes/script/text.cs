@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.Composites;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class text : MonoBehaviour
@@ -42,6 +43,7 @@ public class text : MonoBehaviour
         Debug.Log("Button clicked!");
 
         MainMenu.SetActive(!MainMenu.activeSelf);
+        SceneManager.LoadScene("Gameplay");
 
     }
 }

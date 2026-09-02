@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: e8206a7d0fb0b430ba960d025b4488f5
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330976
+  packageName: 2D Lighting for Pixel Art| Project files
+  packageVersion: 2.0
+  assetPath: Assets/2D_Pixel_Light/Art/Sprites/Witch/Witch_Base_Basic.png
+  uploadId: 948448
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -459,6 +466,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Witch_Base_Basic_0
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 90
+        width: 5
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369076c388b6c8b4ba99002d36bff128
+      internalID: -1609502805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -491,15 +520,9 @@ TextureImporter:
       Witch_Base_7: 1919451975360323378
       Witch_Base_8: -1886214583068557937
       Witch_Base_9: -2065699717593185848
+      Witch_Base_Basic_0: -1609502805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 330976
-  packageName: 2D Lighting for Pixel Art| Project files
-  packageVersion: 2.0
-  assetPath: Assets/2D_Pixel_Light/Art/Sprites/Witch/Witch_Base_Basic.png
-  uploadId: 948448

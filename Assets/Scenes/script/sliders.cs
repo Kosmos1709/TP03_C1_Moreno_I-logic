@@ -5,8 +5,8 @@ public class sliders : MonoBehaviour
 {
     [SerializeField] private Slider SliderPlayer1;
     [SerializeField] private Slider SliderPlayer2;
-    [SerializeField] private Movement PlayerOne;
-    [SerializeField] private Movement PlayerTwo;
+    [SerializeField] private MovimentPlayers PlayerOne;
+    [SerializeField] private MovimentPlayers PlayerTwo;
 
     void Start()
     {
