@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class BallScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float DeltaTime = 1.0f; 
+    [SerializeField] private float speed = 5f;
+    
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

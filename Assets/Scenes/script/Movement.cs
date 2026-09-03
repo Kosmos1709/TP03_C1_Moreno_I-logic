@@ -8,7 +8,7 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 public class Movement : MonoBehaviour
 {
     public float speed = 15f;
-    public float TimeScale;
+    public float TimeScale = 0f;
     [SerializeField] private Button PLAY;
     [Header("button Pause")]
     [SerializeField] private KeyCode PAUSE;
