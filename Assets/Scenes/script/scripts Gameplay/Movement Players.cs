@@ -1,12 +1,14 @@
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 
 public class MovimentPlayers : MonoBehaviour
 {
-    
+    public float timeScale;
+    [SerializeField] private GameObject PauseMenu;
+    public float speed= 10f;
     [SerializeField] private KeyCode UpKey;
     [SerializeField] private KeyCode DownKey;
-    public float speed= 5f;
 
 
 
@@ -18,6 +20,17 @@ public class MovimentPlayers : MonoBehaviour
     void Update()
     {
         //
+        Time.timeScale = timeScale;
+
+        if (PauseMenu.activeSelf)
+        {
+            timeScale = 0f;
+        }
+        else
+        {
+            timeScale = 1f;
+        }
+
         if (Input.GetKey(UpKey))
         {
             transform.Translate(Vector2.up * speed * Time.deltaTime);

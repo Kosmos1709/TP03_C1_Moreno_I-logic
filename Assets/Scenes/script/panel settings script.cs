@@ -28,13 +28,19 @@ public class panelsettingsscript : MonoBehaviour
 
     private void FunctionBack()
     {
-        SettingsMenu.SetActive(!SettingsMenu.activeSelf);
-        ForwardBtn.interactable = !ForwardBtn.interactable;
-        btnplay.interactable = !btnplay.interactable;
+        
+       
     }
 
     void Update()
     {
-        
+        if (SettingsMenu.activeSelf) {
+            ForwardBtn.interactable = true;
+            btnplay.interactable = false;
+             }
+        if (!SettingsMenu.activeSelf) {
+            ForwardBtn.interactable = false;
+            btnplay.interactable = true;
+        }
     }
 }

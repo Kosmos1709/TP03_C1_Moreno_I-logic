@@ -52,10 +52,13 @@ public class PauseScripts : MonoBehaviour
     {
         SettingsMenuPause.SetActive(!SettingsMenuPause.activeSelf);
         SettingsBtn.interactable = false;
+        
     }
     private void FunctionBackSettings()
     {
         SettingsBtn.interactable = true;
+        SettingsMenuPause.SetActive(!SettingsMenuPause.activeSelf);
+
     }
 
     private void FunctionCredits()
@@ -82,7 +85,14 @@ public class PauseScripts : MonoBehaviour
           
             PauseMenu.SetActive(!PauseMenu.activeSelf);
             
-        }    
-        
+        }
+        if (SettingsMenuPause.activeSelf) 
+            ContinueBtn.interactable = false;
+        else if (!SettingsMenuPause.activeSelf)
+            ContinueBtn.interactable = true;
+
+
+
+
     }
 }
