@@ -4,13 +4,19 @@ using UnityEngine.UI;
 
 public class MovimentPlayers : MonoBehaviour
 {
+    
     public float timeScale;
     [SerializeField] private GameObject PauseMenu;
+    [SerializeField] private Rigidbody2D RigiPlayer;
     public float speed= 10f;
     [SerializeField] private KeyCode UpKey;
     [SerializeField] private KeyCode DownKey;
 
 
+    void Awake()
+    {
+        RigiPlayer = GetComponent<Rigidbody2D>();
+    }
 
     void Start()
     {
@@ -26,18 +32,22 @@ public class MovimentPlayers : MonoBehaviour
         {
             timeScale = 0f;
         }
-        else
-        {
+        else if(!PauseMenu.activeSelf) 
             timeScale = 1f;
-        }
+        
 
+
+    }
+
+    private void FixedUpdate()
+    {
         if (Input.GetKey(UpKey))
         {
-            transform.Translate(Vector2.up * speed * Time.deltaTime);
+            RigiPlayer.MovePosition(RigiPlayer.position + Vector2.up * speed * Time.fixedDeltaTime);
         }
         if (Input.GetKey(DownKey))
         {
-            transform.Translate(Vector2.down * speed * Time.deltaTime);
+            RigiPlayer.MovePosition(RigiPlayer.position + Vector2.down * speed * Time.fixedDeltaTime);
         }
     }
 }

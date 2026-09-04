@@ -628,7 +628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1062379639813597345, guid: ae9f2598415c3d548b9a2c84f8b2fc8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.70369
+      value: -2.16
       objectReference: {fileID: 0}
     - target: {fileID: 1062379639813597345, guid: ae9f2598415c3d548b9a2c84f8b2fc8c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -667,9 +667,17 @@ PrefabInstance:
       value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 5461661089224787087, guid: ae9f2598415c3d548b9a2c84f8b2fc8c, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461661089224787087, guid: ae9f2598415c3d548b9a2c84f8b2fc8c, type: 3}
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 1371280362}
+    - target: {fileID: 5461661089224787087, guid: ae9f2598415c3d548b9a2c84f8b2fc8c, type: 3}
+      propertyPath: RigiPlayer
+      value: 
+      objectReference: {fileID: 807187731}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -677,6 +685,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2843923640742414412, guid: ae9f2598415c3d548b9a2c84f8b2fc8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 807187729}
+    - targetCorrespondingSourceObject: {fileID: 2843923640742414412, guid: ae9f2598415c3d548b9a2c84f8b2fc8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 807187731}
   m_SourcePrefab: {fileID: 100100000, guid: ae9f2598415c3d548b9a2c84f8b2fc8c, type: 3}
 --- !u!4 &807187726 stripped
 Transform:
@@ -740,6 +751,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.6073072, y: 2.125877}
   m_EdgeRadius: 0
+--- !u!50 &807187731
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109595252}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 5
 --- !u!1 &838340058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,16 +1434,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 654686499}
     m_Modifications:
     - target: {fileID: 1042784537885851913, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042784537885851913, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 1371280362}
+    - target: {fileID: 1042784537885851913, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
+      propertyPath: RigiPlayer
+      value: 
+      objectReference: {fileID: 1401001762}
     - target: {fileID: 3552564414614836607, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.84
+      value: -10.95
       objectReference: {fileID: 0}
     - target: {fileID: 3552564414614836607, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.97369
+      value: -2.71
       objectReference: {fileID: 0}
     - target: {fileID: 3552564414614836607, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1450,6 +1496,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6339160122939349783, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1401001760}
+    - targetCorrespondingSourceObject: {fileID: 6339160122939349783, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1401001762}
   m_SourcePrefab: {fileID: 100100000, guid: 12132f797fb99e34595f53ceea934b13, type: 3}
 --- !u!4 &1401001756 stripped
 Transform:
@@ -1513,6 +1562,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.6041393, y: 1.9828205}
   m_EdgeRadius: 0
+--- !u!50 &1401001762
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504460748}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 5
 --- !u!1 &2051009030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,6 +1601,7 @@ GameObject:
   - component: {fileID: 2051009031}
   - component: {fileID: 2051009034}
   - component: {fileID: 2051009033}
+  - component: {fileID: 2051009035}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1600,7 +1677,7 @@ Transform:
   m_GameObject: {fileID: 2051009030}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.56, y: -0.36, z: 0}
+  m_LocalPosition: {x: -5.05, y: -0.28, z: 0}
   m_LocalScale: {x: 0.1837, y: 0.1846575, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1667,8 +1744,24 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &2051009035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051009030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24381b68695b9cc4fb9dc816b7d938d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallScript
+  DeltaTime: 0
+  PauseMenu: {fileID: 1371280362}
+  speed: 5
+  ball: {fileID: 2051009034}
 --- !u!1 &2094678433
 GameObject:
   m_ObjectHideFlags: 0
