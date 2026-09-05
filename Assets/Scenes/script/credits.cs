@@ -23,7 +23,12 @@ public class credits : MonoBehaviour
     private void FunctionCredits()
     {
         Debug.Log("Boton de Creditos presionado");
-        CreditsMenu.SetActive(!CreditsMenu.activeSelf);
+        if (CreditsMenu.activeSelf ) {
+            CreditsMenu.SetActive(false);
+        }
+        else if (CreditsMenu.activeSelf == false) {
+            CreditsMenu.SetActive(true);
+        }
     }
 
     void Start()

@@ -5,13 +5,13 @@ public class panelsettingsscript : MonoBehaviour
 {
         [SerializeField] private GameObject SettingsMenu;
         [SerializeField] private Button BackBtn;
-        [SerializeField] private Button ForwardBtn;
+        [SerializeField] private Button SettingsBtn;
         [SerializeField] private Button btnplay;
 
 
     private void Awake()
     {
-        BackBtn.onClick.AddListener(FunctionBack);
+       
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,27 +20,15 @@ public class panelsettingsscript : MonoBehaviour
 
     }
 
-    private void OnDestroy()
-    {
-        BackBtn.onClick.RemoveAllListeners();
-    }
-    // Update is called once per frame
-
-    private void FunctionBack()
-    {
-        
-       
-    }
-
     void Update()
     {
         if (SettingsMenu.activeSelf) {
-            ForwardBtn.interactable = true;
+            SettingsBtn.interactable = false;
             btnplay.interactable = false;
              }
         if (!SettingsMenu.activeSelf) {
-            ForwardBtn.interactable = false;
             btnplay.interactable = true;
+            SettingsBtn.interactable = true;
         }
     }
 }

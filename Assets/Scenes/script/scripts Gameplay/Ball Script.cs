@@ -14,12 +14,11 @@ public class BallScript : MonoBehaviour
 
     void Start()
     {
-        ball.linearVelocity = new Vector2(1f, 0f).normalized * speed;
+        ball.linearVelocity = new Vector2(1f, 1f).normalized * speed;
 
     }
     private void FixedUpdate()
     {
-        ball.linearVelocity = ball.linearVelocity.normalized * speed;
 
     }
 
